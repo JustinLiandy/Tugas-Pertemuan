@@ -1,0 +1,130 @@
+._230060002_body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+._230060002_header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+._230060002_header table {
+  width: 100%;
+  text-align: center;
+}
+
+._230060002_header table td {
+  padding: 10px;
+}
+
+._230060002_header table td a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+._230060002_header table td a:hover {
+  background-color: #ffffff;
+  color: rgb(21, 67, 82);
+}
+
+._230060002_main {
+  padding: 20px;
+  text-align: center;
+}
+
+._230060002_h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+._230060002_h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+._230060002_table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+._230060002_table, ._230060002_th, ._230060002_td {
+  border: 1px solid #ddd;
+}
+
+._230060002_th, ._230060002_td {
+  padding: 10px;
+  text-align: left;
+}
+
+._230060002_th {
+  background-color: #f2f2f2;
+}
+
+._230060002_tr:hover {
+  background-color: #f9f9f9;
+}
+
+._230060002_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+._230060002_form table {
+  width: 80%;
+  border: none;
+}
+
+._230060002_form table td {
+  padding: 10px;
+  text-align: left;
+}
+
+._230060002_form table td input, 
+._230060002_form table td textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+._230060002_form table td button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+._230060002_form table td button:hover {
+  background-color: #ffffff;
+  color: rgb(21, 67, 82);
+}
+
+._230060002_img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+._230060002_footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
