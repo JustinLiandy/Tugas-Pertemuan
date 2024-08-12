@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Equipment Store | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+<style>
+
+._230060002_accordion {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+._230060002_accordion th, ._230060002_accordion td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+._230060002_accordion th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+._230060002_accordion td {
+  display: none;
+  background-color: #ffffff;
+}
+
+._230060002_accordion tr:hover {
+  background-color: #f9f9f9;
+}
+
+._230060002_accordion .active + td {
+  display: table-cell;
+}
+</style>
+</head>
+<body>
+    <header class="_230060002_header">
+        <table class="_230060002_table">
+            <tr class="_230060002_tr">
+                <td class="_230060002_td"><a href="index.html" class="_230060002_a">Home</a></td>
+                <td class="_230060002_td"><a href="best_seller.html" class="_230060002_a">Best Seller</a></td>
+                <td class="_230060002_td"><a href="Sneakers.html" class="_230060002_a">Sneakers</a></td>
+                <td class="_230060002_td"><a href="review.html" class="_230060002_a">Give us A Comment</a></td>
+                <td class="_230060002_td"><a href="kids.html" class="_230060002_a">kids</a></td>
+                <td class="_230060002_td"><a href="login.html" class="_230060002_a">Login</a></td>
+                <td class="_230060002_td"><a href="signup.html" class="_230060002_a">Sign up</a></td>
+                <td class="_230060002_td"><a href="customer_feedback.html" class="_230060002_a">Customer Feedback</a></td>
+                <td class="_230060002_td"><a href="nike.html" class="_230060002_a">Nike Store</a></td>  
+                <td class="_230060002_td"><a href="addidas.html" class="_230060002_a">Addidas Store</a></td>
+                <td class="_230060002_td"><a href="add_product.html" class="_230060002_a">Add Product</a></td>
+
+            </tr>
+        </table>
+    </header>
+    <main class="_230060002_main">
+        <section class="_230060002_landing">
+            <h1 class="_230060002_h1">Welcome to Our Sports Equipment Store</h1>
+            <p class="_230060002_p">Find the best sports equipment to elevate your game.</p>
+        </section>
+        <section class="_230060002_specials">
+            <h2 class="_230060002_h2">Featured Products</h2>
+            <table class="_230060002_table">
+                <thead class="_230060002_thead">
+                    <tr class="_230060002_tr">
+                        <th class="_230060002_th">Product</th>
+                        <th class="_230060002_th">Description</th>
+                        <th class="_230060002_th">Price</th>
+                    </tr>
+                </thead>
+                <tbody class="_230060002_tbody">
+                    <tr class="_230060002_tr">
+                        <td class="_230060002_td">Nike Air Jordan</td>
+                        <td class="_230060002_td">High-performance basketball shoes</td>
+                        <td class="_230060002_td">$150</td>
+                    </tr>
+                    <tr class="_230060002_tr">
+                        <td class="_230060002_td">Adidas Running Shoes</td>
+                        <td class="_230060002_td">Comfort and durability for long runs</td>
+                        <td class="_230060002_td">$120</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="_230060002_info">
+            <h2 class="_230060002_h2">More About Us</h2>
+            <table class="_230060002_info-table">
+                <tr class="_230060002_info-tr">
+                    <td class="_230060002_info-td">
+                        <h3>About Us</h3>
+                        <p>We aim to provide top-quality sports equipment to athletes of all levels. Our selection is curated to meet the needs of professionals and hobbyists alike.</p>
+                    </td>
+                    <td class="_230060002_info-td">
+                        <h3>Vision</h3>
+                        <p>Our vision is to be the leading provider of sports equipment, known for our quality, variety, and customer satisfaction.</p>
+                    </td>
+                </tr>
+                <tr class="_230060002_info-tr">
+                    <td class="_230060002_info-td">
+                        <h3>Mission</h3>
+                        <p>Our mission is to support athletes with the best equipment, helping them achieve their goals and enhance their performance.</p>
+                    </td>
+                    <td class="_230060002_info-td">
+                        <h3>Our Location</h3>
+                        <p>Jl Mahoni , Medan. We are located in the heart of the city, providing easy access to a wide range of sports equipment and expert advice.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer class="_230060002_footer">
+        <p>&copy; 2024 Sports Equipment Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+    <script>
+        document.querySelectorAll('._230060002_th').forEach(header => {
+            header.addEventListener('click', () => {
+                const td = header.nextElementSibling;
+                if (header.classList.contains('active')) {
+                    header.classList.remove('active');
+                    td.style.display = 'none';
+                } else {
+                    document.querySelectorAll('._230060002_th').forEach(h => {
+                        h.classList.remove('active');
+                        h.nextElementSibling.style.display = 'none';
+                    });
+                    header.classList.add('active');
+                    td.style.display = 'table-cell';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

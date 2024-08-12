@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product | Sports Equipment Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="_230060002_header">
+        <table class="_230060002_table">
+            <tr class="_230060002_tr">
+              <td class="_230060002_td"><a href="index.html" class="_230060002_a">Home</a></td>
+              <td class="_230060002_td"><a href="best_seller.html" class="_230060002_a">Best Seller</a></td>
+              <td class="_230060002_td"><a href="Sneakers.html" class="_230060002_a">Sneakers</a></td>
+              <td class="_230060002_td"><a href="review.html" class="_230060002_a">Give us A Comment</a></td>
+              <td class="_230060002_td"><a href="kids.html" class="_230060002_a">kids</a></td>
+              <td class="_230060002_td"><a href="login.html" class="_230060002_a">Login</a></td>
+              <td class="_230060002_td"><a href="signup.html" class="_230060002_a">Sign up</a></td>
+              <td class="_230060002_td"><a href="customer_feedback.html" class="_230060002_a">Customer Feedback</a></td>
+              <td class="_230060002_td"><a href="nike.html" class="_230060002_a">Nike Store</a></td>  
+              <td class="_230060002_td"><a href="addidas.html" class="_230060002_a">Addidas Store</a></td>
+              <td class="_230060002_td"><a href="add_product.html" class="_230060002_a">Add Product</a></td>
+            </tr>
+        </table>
+    </header>
+    <main class="_230060002_main">
+        <section class="_230060002_form">
+            <h2 class="_230060002_h2">Add a New Product</h2>
+            <form action="submit_product.php" method="post" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td><label for="productName">Product Name:</label></td>
+                        <td><input type="text" id="productName" name="productName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="brand">Brand:</label></td>
+                        <td>
+                            <select id="brand" name="brand" required>
+                                <option value="Nike">Nike</option>
+                                <option value="Adidas">Adidas</option>
+                                <option value="Puma">Puma</option>
+                                <option value="Reebok">Reebok</option>
+                                <option value="Under Armour">Under Armour</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="description">Description:</label></td>
+                        <td><textarea id="description" name="description" rows="4" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="price">Price:</label></td>
+                        <td><input type="text" id="price" name="price" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="image">Upload Image:</label></td>
+                    
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Add Product</button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    <footer class="_230060002_footer">
+        <p>&copy; 2024 Sports Equipment Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

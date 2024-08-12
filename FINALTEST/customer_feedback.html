@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .feedback-section,
+        .responses-section {
+            margin-bottom: 20px;
+        }
+
+        .feedback-section h2,
+        .responses-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .feedback-section p {
+            margin-bottom: 10px;
+        }
+
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feedback-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"],
+        .feedback-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .feedback-form textarea {
+            height: 100px;
+        }
+
+        .feedback-form button[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .feedback-form button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .responses-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .responses-table th,
+        .responses-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .responses-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .responses-table tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header class="_230060002_header">
+        <table class="_230060002_table">
+            <tr class="_230060002_tr">
+                <td class="_230060002_td"><a href="index.html" class="_230060002_a">Home</a></td>
+                <td class="_230060002_td"><a href="best_seller.html" class="_230060002_a">Best Seller</a></td>
+                <td class="_230060002_td"><a href="Sneakers.html" class="_230060002_a">Sneakers</a></td>
+                <td class="_230060002_td"><a href="review.html" class="_230060002_a">Give us A Comment</a></td>
+                <td class="_230060002_td"><a href="kids.html" class="_230060002_a">kids</a></td>
+                <td class="_230060002_td"><a href="login.html" class="_230060002_a">Login</a></td>
+                <td class="_230060002_td"><a href="signup.html" class="_230060002_a">Sign up</a></td>
+                <td class="_230060002_td"><a href="customer_feedback.html" class="_230060002_a">Customer Feedback</a></td>
+                <td class="_230060002_td"><a href="nike.html" class="_230060002_a">Nike Store</a></td>  
+                <td class="_230060002_td"><a href="addidas.html" class="_230060002_a">Addidas Store</a></td>
+                <td class="_230060002_td"><a href="add_product.html" class="_230060002_a">Add Product</a></td>
+
+            </tr>
+        </table>
+    </header>
+    <main>
+        <section class="feedback-section">
+            <h2>We value your feedback!</h2>
+            <p>Please leave your feedback below:</p>
+            <form id="feedback-form" class="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="product">Product Purchased:</label>
+                <input type="text" id="product" name="product" required>
+                
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="responses-section">
+            <h2>Customer Responses</h2>
+            <table class="responses-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Product Purchased</th>
+                        <th>Feedback</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add feedback responses here -->
+                    <tr>
+                        <td>justin liandy</td>
+                        <td>justinliandy@gmail.cok</td>
+                        <td>Nike Air Jordan</td>
+                        <td>Great quality and comfortable fit! i love it</td>
+                    </tr>
+                    <tr>
+                        <td>Winston</td>
+                        <td>winston@gmail.com</td>
+                        <td>Adidas Ultraboost</td>
+                        <td>Amazing comfort and style. Will buy again!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="_230060002_footer">
+        <p>&copy; 2024 Sports Equipment Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
